@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Sunshine Café</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Sunshine Café</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">店舗情報</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li><a href="#access">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <section id="about">
+      <!-- <h2>店舗情報</h2> -->
+      <p>Sunshine Caféは、渋谷区恵比寿にある小さなカフェです。
+        <br><br>オーガニック食材を使用した手作りの料理と、
+        <br>新鮮なコーヒーを提供しています。
+        <br>こだわりの内装で、落ち着いた雰囲気の中でくつろぐことができます。
+        <br><br>本を片手に静かに過ごしたい方、
+        <br>美味しいコーヒーでリフレッシュしたい方、
+        <br>心温まるおしゃべりで日々の疲れを癒したい方など、
+        <br>様々なお客様に愛されています。
+        <br><br>当店の一押し商品は、「オーガニックコーヒー」です。
+        <br>厳選されたオーガニック豆を使用し、
+        <br>一杯一杯丁寧に淹れたコーヒーをぜひご堪能ください。
+        <br><br>Sunshine Café</p>
+    </section>
+  
+    <h2 id="menu">Grand Menu</h2>
+    <div class="menu">
+      <h3>main</h3>
+      <div class="menu-flex">
+        <div>
+          <h4 class="english-menu">Sunshine Salad</h4>
+          <h4 class="japanese-menu">サンシャインサラダ</h4>
+          <div class="image-wrap">
+            <img src="salad.jpg" alt="salad" class="modal-open" data-modal="modal1">
+          </div>
+          <p>700円(税込)</p>
+        </div>
+        
+        <div>
+          <h4 class="english-menu">Sunshine Sand</h4>
+          <h4 class="japanese-menu">サンシャインサンド</h4>
+          <div class="image-wrap">
+            <img src="sandwich.jpg" alt="sandwich" class="modal-open" data-modal="modal2">
+          </div>
+          <p>800円(税込)</p>
+        </div>
+        
+        <div>
+          <h4 class="english-menu">Terichiki Sand</h4>
+          <h4 class="japanese-menu">テリチキサンド</h4>
+          <div class="image-wrap">
+            <img src="chicken-sandwich.jpg" alt="chicken-sandwich" class="modal-open" data-modal="modal3">
+          </div>
+          <p>900円(税込)</p>
+        </div>
+        
+        <div>
+          <h4 class="english-menu">Poteto</h4>
+          <h4 class="japanese-menu">ポテト</h4>
+          <div class="image-wrap">
+            <img src="poteto.jpg" alt="poteto" class="modal-open" data-modal="modal4">
+          </div>
+          <p>500円(税込)</p>
+        </div>
+      </div>
+
+      <h3>coffee</h3>
+      <div class="menu-flex">
+        <div>
+          <h4 class="english-menu">Sunshine Coffee</h4>
+          <h4 class="japanese-menu">サンシャインコーヒー</h4>
+          <div class="image-wrap">
+            <img src="coffee2.jpg" alt="coffee" class="modal-open" data-modal="modal5">
+          </div>
+          <p>600円(税込)</p>
+        </div>
+        
+        <div>
+          <h4 class="english-menu">Adzuki Coffee</h4>
+          <h4 class="japanese-menu">小豆コーヒー</h4>
+          <div class="image-wrap">
+            <img src="coffee3.jpg" alt="coffee" class="modal-open" data-modal="modal6">
+          </div>
+          <p>750円(税込)</p>
+        </div>
+  
+        <div>
+          <h4 class="english-menu">Cafe Latte</h4>
+          <h4 class="japanese-menu">カフェラテ</h4>
+          <div class="image-wrap">
+            <img src="coffee4.jpg" alt="coffee" class="modal-open" data-modal="modal7">
+          </div>
+          <p>700円(税込)</p>
+        </div>
+      </div>
+      
+      <h3>drink</h3>
+      <div class="menu-flex drink">
+        <div>
+          <h4 class="english-menu">Strawberry Shake</h4>
+          <h4 class="japanese-menu">イチゴシェイク</h4>
+          <div class="image-wrap">
+            <img src="strawberry-milkshake.jpg" alt="shake" class="modal-open" data-modal="modal8">
+          </div>
+          <p>700円(税込)</p>
+        </div>
+  
+        <div>
+          <h4 class="english-menu">Lemonade</h4>
+          <h4 class="japanese-menu">レモネード</h4>
+          <div class="image-wrap">
+            <img src="lemonade.jpg" alt="lemonade" class="modal-open" data-modal="modal9">
+          </div>
+          <p>650円(税込)</p>
+        </div>
+  
+        <div>
+          <h4 class="english-menu">Orange Juice</h4>
+          <h4 class="japanese-menu">オレンジジュース</h4>
+          <div class="image-wrap">
+            <img src="orange-juice.jpg" alt="orange-juice" class="modal-open" data-modal="modal10">
+          </div>
+          <p>400円(税込)</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="mask" class="hidden"></div>
+    
+    <section id="modal1" class="modal hidden">
+      <h4 class="english-menu">Sunshine Salad</h4>
+      <h4 class="japanese-menu">サンシャインサラダ</h4>
+      <div class="image-wrap">
+        <img src="salad.jpg" alt="salad">
+      </div>
+      <p>700円(税込)</p>
+      <p>新鮮な季節の野菜をふんだんに使ったサンシャインサラダは、カラダが喜ぶビタミンと栄養をたっぷりと含んでいます。当店自慢のハウスドレッシングで、普段のサラダに新しい命を吹き込みます。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+
+    <section id="modal2" class="modal hidden">
+      <h4 class="english-menu">Sunshine Sand</h4>
+      <h4 class="japanese-menu">サンシャインサンド</h4>
+      <div class="image-wrap">
+        <img src="sandwich.jpg" alt="sandwich">
+      </div>
+      <p>800円(税込)</p>
+      <p>特製サンシャインソースをたっぷりと挟んだサンシャインサンドは、朝食にもランチにもぴったり。手作りのパンとシャキシャキのレタス、フレッシュなトマトが、あなたの一日を明るく照らします。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+
+    <section id="modal3" class="modal hidden">
+      <h4 class="english-menu">Terichiki Sand</h4>
+      <h4 class="japanese-menu">テリチキサンド</h4>
+      <div class="image-wrap">
+        <img src="chicken-sandwich.jpg" alt="chicken-sandwich">
+      </div>
+      <p>900円(税込)</p>
+      <p>日本の味わいを堪能できるテリヤキサンドは、ジューシーなチキンを甘辛の照り焼きソースでグリルしました。柔らかいバンズと新鮮な野菜と共に、ボリューム満点の満足感をお約束します。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+    <section id="modal4" class="modal hidden">
+      <h4 class="english-menu">Poteto</h4>
+      <h4 class="japanese-menu">ポテト</h4>
+      <div class="image-wrap">
+        <img src="poteto.jpg" alt="poteto">
+      </div>
+      <p>500円(税込)</p>
+      <p>外はカリカリ、中はふわふわのポテトは、当カフェの手作りシーズニングで味付けをしています。一口食べれば、なぜリピーターが絶えないのかがわかるはずです。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+    <section id="modal5" class="modal hidden">
+      <h4 class="english-menu">Sunshine Coffee</h4>
+      <h4 class="japanese-menu">サンシャインコーヒー</h4>
+      <div class="image-wrap">
+        <img src="coffee2.jpg" alt="coffee">
+      </div>
+      <p>600円(税込)</p>
+      <p>自家焙煎の豆を使用したサンシャインコーヒーは、一日の始まりに最適な一杯。心地良い苦味と深い香りが、心を満たす時間を約束します。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+    <section id="modal6" class="modal hidden">
+      <h4 class="english-menu">Adzuki Coffee</h4>
+      <h4 class="japanese-menu">小豆コーヒー</h4>
+      <div class="image-wrap">
+        <img src="coffee3.jpg" alt="coffee">
+      </div>
+      <p>750円(税込)</p>
+      <p>和と洋の融合が奏でる小豆コーヒーは、独特の甘さとコーヒーの深い味わいが絶妙にマッチ。お茶請け感覚で楽しめる新感覚のフレーバーをお試しください。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+    <section id="modal7" class="modal hidden">
+      <h4 class="english-menu">Cafe Latte</h4>
+      <h4 class="japanese-menu">カフェラテ</h4>
+      <div class="image-wrap">
+        <img src="coffee3.jpg" alt="coffee3">
+      </div>
+      <p>700円(税込)</p>
+      <p>なめらかなミルクと濃厚なエスプレッソが一体となったカフェラテは、どんな時もあなたを癒してくれる定番ドリンク。カフェアートで一日の気分を明るくしましょう。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+    <section id="modal8" class="modal hidden juice">
+      <h4 class="english-menu">Strawberry Shake</h4>
+      <h4 class="japanese-menu">イチゴシェイク</h4>
+      <div class="image-wrap">
+        <img src="strawberry-milkshake.jpg" alt="shake">
+      </div>
+      <p>700円(税込)</p>
+      <p>フレッシュなイチゴをふんだんに使用したイチゴシェイクは、自然の甘みと鮮やかな色彩が特徴。お子様から大人まで、幅広いお客様に愛される一杯です。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+    <section id="modal9" class="modal hidden juice">
+      <h4 class="english-menu">Lemonade</h4>
+      <h4 class="japanese-menu">レモネード</h4>
+      <div class="image-wrap">
+        <img src="lemonade.jpg" alt="lemonade">
+      </div>
+      <p>650円(税込)</p>
+      <p>天然のレモンを使った爽やかなレモネードは、暑い日の喉を潤すのにぴったり。手絞りのレモンとほのかな甘さが、疲れた心に活力を与えます。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+    <section id="modal10" class="modal hidden juice">
+      <h4 class="english-menu">Orange Juice</h4>
+      <h4 class="japanese-menu">オレンジジュース</h4>
+      <div class="image-wrap">
+        <img src="orange-juice.jpg" alt="orange-juice">
+      </div>
+      <p>400円(税込)</p>
+      <p>朝摘みオレンジをその場で絞ったオレンジジュースは、ビタミンCたっぷりで一日中元気をチャージ。添加物は一切使用せず、オレンジ本来の味をお楽しみいただけます。</p>
+      <div class="modal-close">
+        <span class="material-icons">close</span>
+      </div>
+    </section>
+  
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form>
+        <input type="text" placeholder="お名前" required>
+        <input type="email" placeholder="メールアドレス" required>
+        <textarea placeholder="お問い合わせ内容" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  
+    <section id="access">
+      <h2>アクセス</h2>
+      <p>住所: 東京都渋谷区恵比寿1-1-1</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.1614012093364!2d139.7084164242505!3d35.648394881779616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b41dabaf037%3A0xb83d7e67bee9ed6d!2z44CSMTUwLTAwMTMg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1698526412615!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Sunshine Café</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
