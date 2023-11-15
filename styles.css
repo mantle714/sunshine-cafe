@@ -1,0 +1,287 @@
+/* common */
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #ffd07f1a;
+}
+
+/* section {
+  padding: 20px;
+} */
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header */
+
+header {
+  background: url(mainvisual.jpg) center bottom;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(60%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 100px;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  translate: -50%;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 0 10px;
+}
+
+/* about */
+
+#about {
+  text-align: center;
+  line-height: 2.5;
+  padding: 64px 0;
+}
+
+/* menu */
+
+.menu h3 {
+  font-size: 32px;
+  margin: 48px 0 0;
+  color: #F4A460;
+}
+
+.menu .english-menu {
+  font-size: 10px;
+  margin: 32px 0 0;
+}
+
+.menu .japanese-menu {
+  font-size: 24px;
+  margin: 0;
+}
+
+#menu {
+  position: relative;
+  text-align: center;
+}
+
+#menu::before {
+  content: '';
+  background-color: #ccc;
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  top: 50%;
+  left: 10%;
+}
+
+#menu::after {
+  content: '';
+  background-color: #ccc;
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  top: 50%;
+  right: 10%;
+}
+
+.menu-flex {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  border-bottom: #F4A460 2px dashed;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.menu-flex:last-child {
+  border: none;
+}
+
+.menu-flex div {
+  width: calc((100% - 64px) / 3);
+}
+
+.menu .image-wrap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 80%;
+  width: 100%;
+  transition: transform .5s;
+}
+
+.menu .image-wrap:hover {
+  transform: translateY(-7px) scale(1.02);
+  box-shadow: #ccc 0 5px 5px;
+}
+
+.menu .drink .image-wrap {
+  padding-top: 150%;
+}
+
+.menu .image-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* modal */
+
+#mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #333333e6;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  width: 70%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: white;
+}
+
+.modal * {
+  margin: 0;
+}
+
+.modal .english-menu {
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+.modal .japanese-menu {
+  font-size: 32px;
+}
+
+.modal .image-wrap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.modal.juice .image-wrap {
+  padding-top: 40%;
+  width: 30%;
+}
+
+.modal .image-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal p {
+  margin: 12px 0;
+}
+
+.modal .modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.modal span {
+  font-size: 32px;
+}
+
+/* access */
+
+#access {
+  margin-top: 100px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #555;
+  color: #ffffff;
+}
+
+/* フォームのスタイリング */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #555;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  header h1, nav ul {
+    text-align: left;
+    margin: 0 20px;
+  }
+}
