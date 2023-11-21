@@ -3,27 +3,37 @@
 {
   // スクロール
 
-  let about = document.getElementById('about');
-  let menu = document.getElementById('menu');
-  let contact = document.getElementById('contact');
-  let access = document.getElementById('access');
+  // let about = document.getElementById('about');
+  // let menu = document.getElementById('menu');
+  // let contact = document.getElementById('contact');
+  // let access = document.getElementById('access');
 
-  function scrollToAbout(event) {
+  // function scrollToAbout(event) {
+  //   event.preventDefault();
+  //   about.scrollIntoView({behavior: 'smooth'});
+  // }
+  // function scrollToMenu(event) {
+  //   event.preventDefault();
+  //   menu.scrollIntoView({behavior: 'smooth'});
+  // }
+  // function scrollToContact(event) {
+  //   event.preventDefault();
+  //   contact.scrollIntoView({behavior: 'smooth'});
+  // }
+  // function scrollToAccess(event) {
+  //   event.preventDefault();
+  //   access.scrollIntoView({behavior: 'smooth'});
+  // }
+  function scrollToSection(event) {
     event.preventDefault();
-    about.scrollIntoView({behavior: 'smooth'});
+    const targetId = event.currentTarget.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({behavior: 'smooth'});
   }
-  function scrollToMenu(event) {
-    event.preventDefault();
-    menu.scrollIntoView({behavior: 'smooth'});
-  }
-  function scrollToContact(event) {
-    event.preventDefault();
-    contact.scrollIntoView({behavior: 'smooth'});
-  }
-  function scrollToAccess(event) {
-    event.preventDefault();
-    access.scrollIntoView({behavior: 'smooth'});
-  }
+
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', scrollToSection);
+  });
 
   // メニューのモーダルウィンドウ
 
