@@ -307,7 +307,7 @@ button:hover {
 
   header nav ul {
     gap: 16px;
-    min-width: 400px;
+    width: 400px;
   }
   
   header nav a {
@@ -333,7 +333,32 @@ button:hover {
 
 @media (max-width: 520px) {
 
+  /* header */
+
+  header nav {
+    left: calc(100% - 330px);
+  }
+
+  header nav ul {
+    width: 300px;
+  }
+  
+  header nav a {
+    font-size: 14px;
+  }
+
+  /* about */
+
+  #about {
+    font-size: 12px;
+  }
+
   /* menu */
+
+  #menu::before,
+  #menu::after {
+    width: 15%;
+  }
 
   .menu-flex div {
     width: 80%;
